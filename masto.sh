@@ -132,7 +132,7 @@ update() {
                     replies_count, 
                     reblogs_count, 
                     favourites_count, 
-                    strptime(created_at, '%Y-%m-%dT%H:%M:%S.%gZ') 
+                    created_at 
                 FROM read_json_auto('/dev/stdin');
         " <<< $statuses
 
